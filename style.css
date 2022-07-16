@@ -3,3 +3,32 @@ html, body {
     padding: 0;
     background-color: lightgreen;
 }
+
+.board {
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(4, 1fr);
+
+    height: 100vh;
+}
+
+.board > * {
+    border: .1rem solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.my-category-title {
+    grid-row-start: 1;
+
+    background-color: lightblue;
+    text-transform: uppercase;
+}
+
+.my-category-clue {
+    font-size: 2rem;
+}
